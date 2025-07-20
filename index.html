@@ -1,83 +1,45 @@
-]<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TechCon 2024 - Home</title>
-  <style>
-    /* Basic styling for layout and accessibility */
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header, nav, main, footer {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 1em;
-    }
-    header {
-      background-color: #004080;
-      color: #fff;
-    }
-    nav a {
-      margin-right: 1em;
-      color: #fff;
-      text-decoration: none;
-    }
-    nav a:focus, nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      padding: 2em 1em;
-    }
-    footer {
-      text-align: center;
-      padding: 1em;
-      background-color: #004080;
-      color: white;
-      font-size: 0.9em;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCon 2024 - Home</title>
 </head>
 <body>
 
-  <!-- Header with site title and navigation -->
-  <header>
-    <h1>TechCon 2024</h1>
-    <nav aria-label="Main navigation">
-      <a href="about.html">About</a>
-      <a href="schedule.html">Schedule</a>
-      <a href="register.html">Register</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    <!-- Header Section -->
+    <header>
+        <h1>TechCon 2024</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Main content area -->
-  <main>
-    <section>
-      <h2>Welcome to TechCon 2024</h2>
-      <p>
-        Join leading innovators, engineers, and tech enthusiasts from around the world at TechCon 2024 — a premier technology conference exploring the future of AI, cybersecurity, robotics, and more. Expand your knowledge, network with professionals, and experience cutting-edge demos and sessions.
-      </p>
+    <!-- Main Content -->
+    <main>
+        <section aria-labelledby="intro-heading">
+            <h2 id="intro-heading">Welcome to TechCon 2024</h2>
+            <p>Join us at TechCon 2024, the premier technology conference bringing together industry leaders, developers, and innovators from around the world. Discover the future of tech through insightful talks, hands-on workshops, and unparalleled networking opportunities.</p>
 
-      <!-- Embedded promotional video -->
-      <video controls width="100%" aria-label="Promotional video for TechCon 2024">
-        <source src="media/techcon2024-promo.mp4" type="video/mp4" />
-        <track src="media/techcon2024-captions.vtt" kind="subtitles" srclang="en" label="English" default />
-        Your browser does not support the video tag. You can <a href="media/techcon2024-promo.mp4">download the video here</a>.
-      </video>
-    </section>
-  </main>
+            <!-- Promotional Video -->
+            <video controls width="640" aria-label="Promotional video for TechCon 2024">
+                <source src="techcon2024-promo.mp4" type="video/mp4">
+                <track src="techcon2024-captions.vtt" kind="subtitles" srclang="en" label="English">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
 
-  <!-- Footer with copyright -->
-  <footer>
-    &copy; 2024 TechCon. All rights reserved. Copyright.
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 TechCon. All rights reserved. <strong>Copyright</strong>.</p>
+    </footer>
 
 </body>
 </html>
-
